@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('./images/bg-intro-desktop.png');
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+h1{
+    font-size: 45px;
+    line-height: 50px;
+}
+
+p{
+    opacity: 0.8;
+}
+
+.container{
+    max-width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.container > div{
+    flex: 1 ;
+    padding: 0 20px;
+}
+
+.container > div > p{
+    margin-top: 30px;
+}
+
+.box{
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.box-blue{
+	padding: 20px;
+    background-color: hsl(248, 32%, 49%);
+}
+
+input{
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 17px 25px;
+    font-family: 'Poppins', sans-serif;
+    border: 1.3px solid hsl(246, 25%, 77%);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-control.error input{
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+input:focus{
+    border: 1.3px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    border: 1.3px solid hsl(154, 59%, 47%);
+    box-shadow: 0 2px hsl(154, 59%, 47%);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 17px 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.08em;  
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:active{
+    box-shadow: none;
+    font-weight: 600;
+    transform: translateY(2px);
+}
+
+.form-control{
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-control img{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.form-control small{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 15px;
+    bottom: -24px;
+    opacity: 0;
+}
+
+.form-control.error small {
+	opacity: 0.7;
+    font-style: italic;
+}
+
+.form-control img {
+	opacity: 0;
+}
+
+.form-control.error img {
+	opacity: 1;
+}
+
+small{
+    color: hsl(246, 25%, 77%);
+    display: block;
+    font-size: 12px;
+}
+
+small a{
+    text-decoration: none;
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
