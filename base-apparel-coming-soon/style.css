@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url('./images/bg-pattern-desktop.svg');
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.left{
+    width: 57%;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    margin: 110px;
+    max-width: 700px;
+}
+
+.right{
+    width: 43%;
+}
+
+.bg-image{
+    background-image: url('./images/hero-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo{
+    margin:60px 110px 0 ; 
+}
+
+h1{
+    text-transform: uppercase;
+    color: var(--Dark-Grayish-Red);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing:12px;
+}
+
+h1 span{
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+    letter-spacing:14px;
+}
+
+p{
+    color: var(--Desaturated-Red);
+    padding: 30px 80px 0 0px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+input{
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 0.5px solid var(--Desaturated-Red);
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--Dark-Grayish-Red);
+    width: 100%;
+}
+
+input:focus{
+    border: 1px solid rgb(165, 92, 92);
+    outline: none;
+}
+
+input .error{
+    border: 3px solid var(--Soft-Red);
+    outline: none;
+}
+
+button{
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 15px;
+    border: none;
+    width: 100px;
+    border-radius: 60px;
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+
+form{
+    position: relative;
+}
+
+.error-icon{
+    position: absolute;
+    top: 9px;
+    right: 110px;
+    bottom: 0;
+    transform: translateY(10%);
+}
+
+small{
+    margin:30px 15px 0;
+}
