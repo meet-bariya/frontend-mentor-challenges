@@ -87,10 +87,6 @@ h1 span{
     transform: translateY(-55%);
 }
 
-footer{
-    margin: -60px;
-    text-align: center;
-}
 
 @media (max-width: 770px) {
 
@@ -99,12 +95,5 @@ footer{
     }
     .box-push{
         transform: translateY(0);
-    }
-}
-
-@media (max-width: 1140px) {
-
-    footer{
-        margin: 40px;
     }
 }
